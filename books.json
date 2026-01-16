@@ -1,0 +1,36 @@
+{
+  "books": [
+    {
+      "title": "Space Dinosaurs Coloring Book",
+      "description": "Join dinosaur astronauts on an epic space adventure! Perfect for kids who love dinosaurs and outer space.",
+      "ageRange": "Ages 4-8",
+      "coverImage": "images/space-dinosaurs.jpg",
+      "amazonLink": "https://www.amazon.com/dp/YOUR_PRODUCT_ID",
+      "available": true
+    },
+    {
+      "title": "New Adventure",
+      "description": "Another exciting coloring book is on its way! Stay tuned for more creative fun.",
+      "ageRange": "Ages 4-8",
+      "coverImage": "",
+      "amazonLink": "",
+      "available": false
+    },
+    {
+      "title": "New Adventure",
+      "description": "Another exciting coloring book is on its way! Stay tuned for more creative fun.",
+      "ageRange": "Ages 4-8",
+      "coverImage": "",
+      "amazonLink": "",
+      "available": false
+    },
+    {
+      "title": "New Adventure",
+      "description": "Another exciting coloring book is on its way! Stay tuned for more creative fun.",
+      "ageRange": "Ages 4-8",
+      "coverImage": "",
+      "amazonLink": "",
+      "available": false
+    }
+  ]
+}
