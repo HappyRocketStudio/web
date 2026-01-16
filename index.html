@@ -5,6 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Happy Rocket Studio - Coloring Books for Kids</title>
     <style>
+        @font-face {
+            font-family: 'Chewy Bubble';
+            src: url('fonts/ChewyBubble.otf') format('opentype');
+            font-weight: normal;
+            font-style: normal;
+            font-display: swap;
+        }
+
         * {
             margin: 0;
             padding: 0;
@@ -34,18 +42,20 @@
             display: flex;
             align-items: center;
             justify-content: center;
-            gap: 20px;
+            gap: 25px;
         }
 
-        .logo {
-            width: 80px;
-            height: 80px;
+        .logo_360 {
+            width: 120px;
+            height: 120px;
+            flex-shrink: 0;
         }
 
         .brand-name {
-            font-size: 2em;
-            font-weight: bold;
-            color: #1e3a5f;
+            font-family: 'Chewy Bubble', 'Comic Sans MS', cursive;
+            font-size: 2.5em;
+            font-weight: normal;
+            letter-spacing: 1px;
         }
 
         .brand-name .happy {
@@ -62,41 +72,28 @@
 
         .hero {
             background: linear-gradient(135deg, #e8f4f8 0%, #fce4ec 100%);
-            padding: 80px 20px;
+            padding: 50px 20px;
             text-align: center;
         }
 
-        .hero h1 {
-            font-size: 3em;
-            color: #1e3a5f;
-            margin-bottom: 20px;
-            font-weight: 800;
-        }
-
         .tagline {
-            font-size: 1.8em;
+            font-size: 2.5em;
             color: #ff69b4;
-            margin-bottom: 30px;
-            font-weight: 600;
-        }
-
-        .hero p {
-            font-size: 1.2em;
-            color: #1e3a5f;
-            max-width: 600px;
-            margin: 0 auto 40px;
+            font-weight: 700;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.1);
         }
 
         .books-section {
-            padding: 80px 20px;
+            padding: 60px 20px;
             background: white;
         }
 
         .section-title {
             text-align: center;
-            font-size: 2.5em;
+            font-size: 2.2em;
             color: #1e3a5f;
-            margin-bottom: 50px;
+            margin-bottom: 40px;
+            font-weight: 700;
         }
 
         .books-grid {
@@ -231,31 +228,50 @@
 
         .loading {
             text-align: center;
-            padding: 100px 20px;
+            padding: 60px 20px;
             font-size: 1.2em;
             color: #666;
         }
 
         @media (max-width: 768px) {
-            .hero h1 {
-                font-size: 2em;
-            }
-
             .tagline {
-                font-size: 1.3em;
+                font-size: 1.8em;
             }
 
             .brand-name {
-                font-size: 1.5em;
+                font-size: 1.8em;
             }
 
-            .logo {
-                width: 60px;
-                height: 60px;
+            .logo_360 {
+                width: 100px;
+                height: 100px;
+            }
+
+            .header-content {
+                gap: 15px;
             }
 
             .books-grid {
                 grid-template-columns: 1fr;
+            }
+
+            .hero {
+                padding: 40px 20px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .brand-name {
+                font-size: 1.4em;
+            }
+
+            .logo_360 {
+                width: 60px;
+                height: 60px;
+            }
+
+            .tagline {
+                font-size: 1.5em;
             }
         }
     </style>
@@ -264,7 +280,7 @@
     <header>
         <div class="container">
             <div class="header-content">
-                <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 200 200'%3E%3Ctext x='50%25' y='50%25' font-size='100' text-anchor='middle' dominant-baseline='middle'%3E🚀%3C/text%3E%3C/svg%3E" alt="Happy Rocket Studio Logo" class="logo">
+                <img src="logo_360.png" alt="Happy Rocket Studio" class="logo_360">
                 <div class="brand-name">
                     <span class="happy">HAPPY</span>
                     <span class="rocket">ROCKET</span>
@@ -276,9 +292,7 @@
 
     <section class="hero">
         <div class="container">
-            <h1>Coloring Books for Creative Kids</h1>
             <p class="tagline">Blast off into creativity!</p>
-            <p>Spark imagination and creativity with our fun, engaging coloring books designed for young explorers aged 4-8.</p>
         </div>
     </section>
 
@@ -301,7 +315,6 @@
     </footer>
 
     <script>
-        // Load and display books from books.json
         async function loadBooks() {
             try {
                 const response = await fetch('books.json');
@@ -328,7 +341,6 @@
             const card = document.createElement('div');
             card.className = `book-card${book.available ? '' : ' coming-soon'}`;
 
-            // Create image container
             const imageContainer = document.createElement('div');
             imageContainer.className = 'book-image-container';
             
@@ -345,7 +357,6 @@
                 imageContainer.appendChild(placeholder);
             }
 
-            // Create info section
             const info = document.createElement('div');
             info.className = 'book-info';
 
@@ -373,7 +384,6 @@
             description.textContent = book.description;
             info.appendChild(description);
 
-            // Create button
             if (book.available && book.amazonLink) {
                 const btn = document.createElement('a');
                 btn.href = book.amazonLink;
@@ -396,7 +406,6 @@
             return card;
         }
 
-        // Load books when page loads
         loadBooks();
     </script>
 </body>
