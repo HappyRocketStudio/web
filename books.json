@@ -13,7 +13,7 @@
       "description": "Robotic animals in the wild!",
       "ageRange": "Ages 4-8",
       "coverImage": "images/animal-robots.jpg",
-      "amazonLink": "",
+      "amazonLink": "https://www.amazon.com/dp/YOUR_PRODUCT_ID",
       "available": true
     },
     {
@@ -23,6 +23,6 @@
       "coverImage": "",
       "amazonLink": "",
       "available": false
-    },
+    }
   ]
 }
