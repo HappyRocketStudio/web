@@ -1,11 +1,11 @@
 {
   "books": [
     {
-      "title": "Space Dinosaurs Coloring Book",
+      "title": "Space Dinosaurs",
       "description": "Join the dino crew on an epic space adventure!",
       "ageRange": "Ages 4-8",
       "coverImage": "images/space-dinosaurs.jpg",
-      "amazonLink": "https://www.amazon.com/dp/YOUR_PRODUCT_ID",
+      "amazonLink": "https://www.amazon.com/dp/B0GK1G8QYQ",
       "available": true
     },
     {
@@ -13,7 +13,15 @@
       "description": "Robotic animals in the wild!",
       "ageRange": "Ages 4-8",
       "coverImage": "images/animal-robots.jpg",
-      "amazonLink": "https://www.amazon.com/dp/YOUR_PRODUCT_ID",
+      "amazonLink": "https://www.amazon.com/dp/B0GJRPBC1R",
+      "available": true
+    },
+    {
+      "title": "Mission Chicago",
+      "description": "Visit the Windy City!",
+      "ageRange": "Ages 4-8",
+      "coverImage": "images/mission-chicago.jpg",
+      "amazonLink": "https://www.amazon.com/dp/B0GJSS373W",
       "available": true
     },
     {
