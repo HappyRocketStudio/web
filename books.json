@@ -3,25 +3,41 @@
     {
       "title": "Space Dinosaurs",
       "description": "Join the dino crew on an epic space adventure!",
-      "ageRange": "Ages 4-8",
+      "ageRange": "Ages 4+",
       "coverImage": "images/space-dinosaurs.jpg",
-      "amazonLink": "https://www.amazon.com/dp/B0GK1G8QYQ",
+      "amazonLink": "https://amzn.to/3OEsOzZ",
       "available": true
     },
     {
       "title": "Animal Robots",
       "description": "Robotic animals in the wild!",
-      "ageRange": "Ages 4-8",
+      "ageRange": "Ages 4+",
       "coverImage": "images/animal-robots.jpg",
-      "amazonLink": "https://www.amazon.com/dp/B0GJRPBC1R",
+      "amazonLink": "https://amzn.to/466qjMZ",
+      "available": true
+    },
+    {
+      "title": "Sports Monsters",
+      "description": "Another exciting coloring book is on its way! Stay tuned for more creative fun.",
+      "ageRange": "Ages 4+",
+      "coverImage": "images/sports-monsters.jpg",
+      "amazonLink": "https://amzn.to/3OerCmP",
+      "available": true
+    },
+        {
+      "title": "Yummy Kingdom",
+      "description": "Another exciting coloring book is on its way! Stay tuned for more creative fun.",
+      "ageRange": "Ages 4+",
+      "coverImage": "images/yummy-kingdom.jpg",
+      "amazonLink": "https://www.amazon.com/dp/B0GN39RVB1/",
       "available": true
     },
     {
       "title": "Mission Chicago",
       "description": "Visit the Windy City!",
-      "ageRange": "Ages 4-8",
+      "ageRange": "Ages 4+",
       "coverImage": "images/mission-chicago.jpg",
-      "amazonLink": "https://www.amazon.com/dp/B0GJSS373W",
+      "amazonLink": "https://amzn.to/4rM0pX2",
       "available": true
     },
     {
@@ -32,5 +48,6 @@
       "amazonLink": "",
       "available": false
     }
+
   ]
 }
